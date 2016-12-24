@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MeeTCall</title>
+    <title>7 Avengers Call</title>
     <link rel="shortcut icon" href="https://s28.postimg.org/cjs56nzfh/Untitled.png" type="image/png">
     <script src="vendor/jquery-2.2.4.js"></script>
     <link rel="stylesheet" href="vendor/semantic.min.css" />
@@ -131,7 +131,7 @@
 }
     </style>
   </head>
-  <body class="body" onload="" >
+  <body class="body" onload="HIDELOADER()" >
 <div class="ui top fixed menu">
   <div class="item">
     <img src="https://s28.postimg.org/cjs56nzfh/Untitled.png">
@@ -151,7 +151,7 @@
     <div class="ui inverted blue vertical masthead center aligned segment">
       <div class="ui text container">
         <div class="ui header">
-          <h1 class="ui inverted header">Meet Call</h1>
+          <h1 class="ui inverted header">7 Avengers Call</h1>
         </div>
         <h2>Group Call Only Made for Christmas!</h2>
       </div>
@@ -171,22 +171,15 @@
   </div>
 
     </div>
-<div class="ui segment">
-  <div class="ui active inverted dimmer">
-    <div class="ui indeterminate text active loader">
+<div id="HIDELOADER" style="position: fixed;background: white;top: 0;left: 0;width: 100%;z-index: 1000;height: 100%;"><div class="ui indeterminate text active loader" >
 Preparing Buddy Wait...
-    </div>
-  </div>
-  <br><br>
-  <br><br>
-  <br><br>
-</div>
+    </div> </div>
   </body>
 
   <script src="bundle.js"></script>
 <script type="text/javascript">
   function HIDELOADER() {
-    document.getElementById('').style.display = 'none';
+    document.getElementById('HIDELOADER').style.display = 'none';
   }
 </script>
   </body>
